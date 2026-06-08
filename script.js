@@ -26,7 +26,22 @@ function generateReport() {
         "Mysterious Stranger",
         "Captain Confusion",
         "The Chosen One",
-        "An Unexpected Hero"
+        "An Unexpected Hero",
+        "The Last Hope",
+        "Agent Placeholder",
+        "Sir Reginald Questionmark",
+        "The Mysterious Intern",
+        "Future Hall Of Famer",
+        "The Neighborhood Legend",
+        "Count Spreadsheet",
+        "Professor Mayhem",
+        "Commander Side Quest",
+        "The Accidental Celebrity",
+        "Agent Pancake",
+        "Lord Of Mild Inconveniences",
+        "Captain Plot Twist",
+        "The Snack Whisperer",
+        "Baron Von Improvisation"
     ];
 
     const occupationDefaults = [
@@ -34,7 +49,22 @@ function generateReport() {
         "Freelance Adventurer",
         "Part-Time Legend",
         "Snack Consultant",
-        "Executive Decision Maker"
+        "Executive Decision Maker",
+        "Chief Chaos Officer",
+        "Department Of Unfinished Projects",
+        "Independent Problem Creator",
+        "Senior Vice President Of Snacks",
+        "Certified Idea Generator",
+        "Director Of Strategic Napping",
+        "Professional Button Pusher",
+        "Chief Executive Dreamer",
+        "Senior Advisor To Nobody",
+        "Snack Acquisition Specialist",
+        "Part-Time Explorer",
+        "Manager Of Unexpected Outcomes",
+        "Freelance Hero",
+        "Assistant Regional Legend",
+        "Lead Investigator Of Weird Stuff"
     ];
 
     const foodDefaults = [
@@ -42,7 +72,22 @@ function generateReport() {
         "Burritos",
         "Nachos",
         "Mystery Casserole",
-        "Emergency Donuts"
+        "Emergency Donuts",
+        "Cosmic Burritos",
+        "Legendary Garlic Bread",
+        "Questionable Sushi",
+        "Champion Mac And Cheese",
+        "Forbidden Cupcakes",
+        "Intergalactic Nachos",
+        "Suspicious Meatballs",
+        "Victory Pancakes",
+        "Mystery Tacos",
+        "Experimental Chili",
+        "Quantum Donuts",
+        "Supreme Mozzarella Sticks",
+        "Emergency Waffles",
+        "Ancient Burritos",
+        "Maximum Cheese Pizza"
     ];
 
     const hobbyDefaults = [
@@ -50,7 +95,22 @@ function generateReport() {
         "Collecting Questionable Ideas",
         "Competitive Napping",
         "Avoiding Responsibilities",
-        "Advanced Loitering"
+        "Advanced Loitering",
+        "Practicing Dramatic Entrances",
+        "Researching Conspiracy Theories",
+        "Accumulating Random Knowledge",
+        "Perfecting Excuses",
+        "Attempting World Domination",
+        "Training Pigeons",
+        "Inventing New Holidays",
+        "Writing Strongly Worded Emails",
+        "Collecting Unnecessary Gadgets",
+        "Competitive Daydreaming",
+        "Investigating Weird Noises",
+        "Escaping Responsibility",
+        "Mastering The Art Of Procrastination",
+        "Creating Elaborate Plans",
+        "Looking For Hidden Treasure"
     ];
 
     const name =
