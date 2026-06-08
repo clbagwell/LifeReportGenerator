@@ -21,6 +21,32 @@ function randomScore() {
 
 function generateReport() {
 
+    const rawName =
+    document.getElementById("name").value.trim();
+
+    const rawOccupation =
+        document.getElementById("occupation").value.trim();
+    
+    const rawFood =
+        document.getElementById("food").value.trim();
+    
+    const rawHobby =
+        document.getElementById("hobby").value.trim();
+
+    const allFieldsBlank =
+        rawName === "" &&
+        rawOccupation === "" &&
+        rawFood === "" &&
+        rawHobby === "";
+
+    const randomOrigins = [
+        "generated from a spreadsheet accident",
+        "assembled from leftover internet comments",
+        "constructed entirely from snack-related data",
+        "created during a software malfunction",
+        "summoned by an overworked AI"
+    ];
+    
     const nameDefaults = [
         "Anonymous",
         "Mysterious Stranger",
@@ -114,19 +140,19 @@ function generateReport() {
     ];
 
     const name =
-        document.getElementById("name").value.trim() ||
+        rawName ||
         pick(nameDefaults);
 
     const occupation =
-        document.getElementById("occupation").value.trim() ||
+        rawOccupation ||
         pick(occupationDefaults);
 
     const food =
-        document.getElementById("food").value.trim() ||
+        rawFood ||
         pick(foodDefaults);
 
     const hobby =
-        document.getElementById("hobby").value.trim() ||
+        rawHobby ||
         pick(hobbyDefaults);
 
     const easterEgg =
@@ -540,9 +566,45 @@ function generateReport() {
 
     let specialCard = "";
 
+    if (allFieldsBlank) {
+
+        specialCard += `
+        <div class="card easterEggCard">
+    
+            <h2>🎲 RANDOMIZED LIFE DETECTED</h2>
+    
+            <p>
+                User declined to provide any personal information.
+            </p>
+
+            <p>
+                Subject was originally
+                ${pick(randomOrigins)}.
+            </p>
+
+            <p>
+                Emergency personality generation protocol activated.
+            </p>
+    
+            <p>
+                A completely synthetic citizen has been created:
+                <strong>${name}</strong>,
+                a ${occupation}
+                obsessed with ${food}
+                and passionate about ${hobby}.
+            </p>
+    
+            <p>
+                Reality has accepted the result.
+            </p>
+    
+        </div>
+        `;
+    }
+    
     if (hasBatman) {
 
-        specialCard = `
+        specialCard += `
         <div class="card easterEggCard">
 
             <h2>🦇 CLASSIFIED BATMAN FILE</h2>
