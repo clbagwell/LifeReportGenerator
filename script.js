@@ -655,7 +655,10 @@ function generateReport() {
         specialCard += `
         <div class="card easterEggCard">
     
-            <h2>🎲 RANDOMIZED LIFE DETECTED</h2>
+            <h2>
+                <span class="d20badge">20</span>
+                RANDOMIZED LIFE DETECTED 🎲 
+            </h2>
     
             <p>
                 User declined to provide any personal information.
