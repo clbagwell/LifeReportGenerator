@@ -324,6 +324,111 @@ function generateReport() {
     ]);
 
     // =====================================
+    // Breaking News Card
+    //    Template A (News Report)
+    //    Template B (TV Interview)
+    //    Template C (Government Memo)
+    //    Template D (Wikipedia Article)
+    //    Template E (Historical Record)
+    // =====================================
+    
+    const newsTemplate = Math.floor(Math.random() * 5);
+
+    let breakingNewsHtml = "";
+
+    if (newsTemplate === 0) {
+
+        breakingNewsHtml = `
+            <h2>🚨 BREAKING NEWS</h2>
+    
+            <h3>${newsHeadline}</h3>
+    
+            <p>${pick(newsOpenings)} ${name}.</p>
+    
+            <p>${pick(newsEvents)}</p>
+    
+            <p>${pick(newsConsequences)}</p>
+        `;
+    }
+
+    if (newsTemplate === 1) {
+
+        breakingNewsHtml = `
+            <h2>🎤 LIVE INTERVIEW</h2>
+    
+            <p>
+                Reporter: Can you explain what happened?
+            </p>
+    
+            <p>
+                ${name}: Not really.
+            </p>
+    
+            <p>
+                Reporter: Were tacos involved?
+            </p>
+    
+            <p>
+                ${name}: No comment.
+            </p>
+        `;
+    }
+
+    if (newsTemplate === 2) {
+
+        breakingNewsHtml = `
+            <h2>📋 INTERNAL MEMO</h2>
+    
+            <p>
+                SUBJECT: Ongoing ${name} Situation
+            </p>
+    
+            <p>
+                Status: Escalating
+            </p>
+    
+            <p>
+                Recommended Action:
+                Monitor closely.
+            </p>
+        `;
+    }
+
+    if (newsTemplate === 3) {
+
+        breakingNewsHtml = `
+            <h2>📚 WIKIPEDIA ARTICLE</h2>
+    
+            <p>
+                ${name} is best known for
+                involvement in several incidents
+                involving ${food}.
+            </p>
+    
+            <p>
+                Historians remain divided.
+            </p>
+        `;
+    }
+
+    if (newsTemplate === 4) {
+    
+        breakingNewsHtml = `
+            <h2>🏛 HISTORICAL RECORD</h2>
+    
+            <p>
+                In the year 2026,
+                ${name} attempted
+                ${hobby}.
+            </p>
+    
+            <p>
+                Civilization was never quite the same.
+            </p>
+        `;
+    }
+
+    // =====================================
     // PERFORMANCE REVIEW
     // =====================================
 
@@ -871,7 +976,8 @@ function generateReport() {
     <div id="shareArea">
 
         <div class="card">
-            <h2>🚨 BREAKING NEWS</h2>
+            ${breakingNewsHtml}
+            <!-- <h2>🚨 BREAKING NEWS</h2> 
 
             <h3>${newsHeadline}</h3>
 
@@ -887,6 +993,7 @@ function generateReport() {
             <p>${pick(newsConsequences)}</p>
 
             <p>${witnessQuote}</p>
+            -->
         </div>
 
         ${specialCard}
