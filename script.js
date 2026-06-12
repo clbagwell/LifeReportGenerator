@@ -347,18 +347,13 @@ function generateReport() {
 
     // =====================================
     // Breaking News Card
-    //    Template A (News Report)
-    //    Template B (TV Interview)
-    //    Template C (Government Memo)
-    //    Template D (Wikipedia Article)
-    //    Template E (Historical Record)
     // =====================================
     
     const newsTemplate = Math.floor(Math.random() * 5);
 
     let breakingNewsHtml = "";
 
-    if (newsTemplate === 0) {
+    if (newsTemplate === 0) {  //Traditional News Report
 
         breakingNewsHtml = `
             <h2>🚨 BREAKING NEWS</h2>
@@ -373,7 +368,7 @@ function generateReport() {
         `;
     }
 
-    if (newsTemplate === 1) {
+    if (newsTemplate === 1) {  //Live Interview
 
         breakingNewsHtml = `
             <h2>🎤 LIVE INTERVIEW</h2>
@@ -396,7 +391,7 @@ function generateReport() {
         `;
     }
 
-    if (newsTemplate === 2) {
+    if (newsTemplate === 2) {  //Internal memo
 
         breakingNewsHtml = `
             <h2>📋 INTERNAL MEMO</h2>
@@ -416,7 +411,7 @@ function generateReport() {
         `;
     }
 
-    if (newsTemplate === 3) {
+    if (newsTemplate === 3) {  //Wikipedia Article
 
         breakingNewsHtml = `
             <h2>📚 WIKIPEDIA ARTICLE</h2>
@@ -433,7 +428,7 @@ function generateReport() {
         `;
     }
 
-    if (newsTemplate === 4) {
+    if (newsTemplate === 4) {  //Historical Record
     
         breakingNewsHtml = `
             <h2>🏛 HISTORICAL RECORD</h2>
@@ -877,7 +872,7 @@ function generateReport() {
         `Let's see what happens.`
     ]);
 
-    if (datingTemplate === 0) {
+    if (datingTemplate === 0) {  //Traditional Dating Profile
 
         datingHtml = `
             <h2>❤️ DATING PROFILE</h2>
@@ -890,7 +885,7 @@ function generateReport() {
         `;
     }
 
-    if (datingTemplate === 1) {
+    if (datingTemplate === 1) {  //Red Flag Assessment
 
         datingHtml = `
             <h2>🚩 RED FLAG ANALYSIS</h2>
@@ -922,7 +917,7 @@ function generateReport() {
         `;
     }
 
-    if (datingTemplate === 2) {
+    if (datingTemplate === 2) {  //Amazon Product Review
 
         datingHtml = `
             <h2>📦 PRODUCT REVIEW</h2>
@@ -953,7 +948,7 @@ function generateReport() {
         `;
     }
 
-    if (datingTemplate === 3) {
+    if (datingTemplate === 3) {  //FBI Behavioral Profile
 
         datingHtml = `
             <h2>🕵️ FBI BEHAVIORAL PROFILE</h2>
@@ -987,7 +982,7 @@ function generateReport() {
         `;
     }
 
-    if (datingTemplate === 4) {
+    if (datingTemplate === 4) {  //LinkedIn Connection Request
 
         datingHtml = `
             <h2>💼 LINKEDIN CONNECTION REQUEST</h2>
@@ -1013,7 +1008,7 @@ function generateReport() {
         `;
     }
 
-    if (datingTemplate === 5) {
+    if (datingTemplate === 5) {  //Reality TV Contestant Bio
 
         datingHtml = `
             <h2>📺 REALITY TV CONTESTANT</h2>
@@ -1041,7 +1036,7 @@ function generateReport() {
         `;
     }
 
-    if (datingTemplate === 99) {
+    if (datingTemplate === 99) {  //Rare Perfect Match Detected
 
         datingHtml = `
             <h2>🏆 PERFECT MATCH DETECTED</h2>
@@ -1302,7 +1297,7 @@ function generateReport() {
         `;
     }
 
-    if (heroTemplate === 3) {  //Villain Dossier
+    if (heroTemplate === 3) {  //Intelligence Dossier
 
         heroHtml = `
             <h2>🕶 SECRET INTELLIGENCE FILE</h2>
@@ -1741,7 +1736,7 @@ function generateReport() {
         `;
     }
 
-    if (courtroomTemplate === 99) {
+    if (courtroomTemplate === 99) {  //Rare Trial of the Century
 
         courtroomHtml = `
             <div class="card easterEggCard ultimateEgg">
