@@ -448,10 +448,7 @@ function generateReport() {
     // PERFORMANCE REVIEW
     // =====================================
 
-    const reviewTemplate =
-        Math.floor(Math.random() * 8);
-    
-    let reviewHtml = "";
+    //const reviewTemplate = Math.floor(Math.random() * 8);
     
     const strengths = [
         `Exceptional dedication to ${food}`,
@@ -504,7 +501,7 @@ function generateReport() {
 
     const reviewRoll = Math.random();
 
-    let reviewTemplate;
+    let reviewTemplate = "";
     
     if (reviewRoll < 0.02) {
     
